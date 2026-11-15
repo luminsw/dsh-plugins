@@ -35,30 +35,41 @@ plugin_manager { action: "set_bundle", target: "baihua-dsh-plugin", enabled: fal
 
 ## 本机开发：保住 link 热改
 
-这台机器上六个插件都是 `link:C:\Users\lumin\src\*`，改代码即时生效。装了聚合包会把依赖换成 GitHub 副本，热改就失效。
-
-解决办法是在 profile 的 `package.json` 加 `pnpm.overrides`，把要热改的包指回本地目录（**已实测可用**，其余仍走 GitHub）：
+装了聚合包之后，插件代码默认来自 GitHub 副本。要在本机边改边生效，**在 profile 的 `package.json` 里把六个包显式声明成 `link:` 直接依赖**（与聚合包并列）：
 
 ```json
 {
-  "pnpm": {
-    "overrides": {
-      "baihua-dsh-plugin": "link:C:/Users/lumin/src/baihua-dsh-plugin",
-      "openvino-dsh-plugin": "link:C:/Users/lumin/src/openvino-dsh-plugin"
-    }
+  "dependencies": {
+    "@luminsw/dsh-plugins": "link:C:/Users/lumin/src/dsh-plugins",
+    "baihua-dsh-plugin": "link:C:/Users/lumin/src/baihua-dsh-plugin",
+    "baihua-local-ai-dsh-plugin": "link:C:/Users/lumin/src/baihua-local-ai-dsh-plugin",
+    "hysteria-dsh-plugin": "link:C:/Users/lumin/src/hysteria-dsh-plugin",
+    "openvino-dsh-plugin": "link:C:/Users/lumin/src/openvino-dsh-plugin",
+    "dsh-dev-workbench": "link:C:/Users/lumin/src/dsh-dev-workbench",
+    "@luminsw/icon-standard": "link:C:/Users/lumin/game/dsh-plugins/icon-standard"
   }
 }
 ```
 
-`pnpm install` 后 `node_modules` 里会是符号链接：
+然后 `dsh plugin --profile web install`，`node_modules` 里全是符号链接。
+
+**为什么不用 `pnpm.overrides`**：实测无效。聚合包本身是 `link:` 时，它有自己的 `node_modules`，插件名会先在**聚合包自己的** `node_modules` 里命中（GitHub 副本），overrides 只作用于 profile 的安装图，管不到里面那层。用直接依赖让 profile 的解析先命中，才是可靠做法。
+
+**为什么要显式声明**：只靠残留的旧符号链接也能碰巧工作，但一次 `pnpm prune` 就会静默回落到 GitHub 副本。判断实际加载的是哪一份，查它解析到的包目录：
 
 ```
-baihua-dsh-plugin  0.1.0  <- ..\..\..\src\baihua-dsh-plugin
+cordis_inspect_query { provider: "Config", method: "listConfigs", input: { name: "@luminsw/icon-standard" } }
+# packageDir 应指向你的工作树，而不是 …\src\dsh-plugins\node_modules\…
 ```
 
-## 私有仓库说明
+改了 `link:` 依赖指向的目录后，loader 会报 `restart-required`（`package-moved`），需要重启 DSH 才换新模块。
 
-本仓库是私有仓库，`qihuang-icon-standard` 也是私有。因此安装本包需要该机器上有 GitHub 凭据（`gh auth login` 或 git credential helper 里存好 token），否则拉取会失败。
+## 仓库可见性
+
+两个仓库都是 public，安装不需要凭据：
+
+- `@luminsw/dsh-plugins` — https://github.com/luminsw/dsh-plugins
+- `@luminsw/icon-standard` — https://github.com/luminsw/qihuang-icon-standard
 
 ## 依赖锁定
 
