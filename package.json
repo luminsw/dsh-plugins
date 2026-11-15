@@ -10,7 +10,7 @@
     "hysteria-dsh-plugin": "github:luminsw/hysteria-dsh-plugin",
     "openvino-dsh-plugin": "github:luminsw/openvino-dsh-plugin",
     "dsh-dev-workbench": "github:luminsw/dsh-dev-workbench",
-    "@local/icon-standard": "github:luminsw/qihuang-icon-standard"
+    "@luminsw/icon-standard": "github:luminsw/qihuang-icon-standard"
   },
   "dsh": {
     "bundle": {

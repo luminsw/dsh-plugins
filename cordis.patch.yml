@@ -22,4 +22,4 @@
     - id: dsh-dev-workbench
       name: dsh-dev-workbench
     - id: icon-standard
-      name: '@local/icon-standard'
+      name: '@luminsw/icon-standard'

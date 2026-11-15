@@ -11,7 +11,7 @@
 | `dsh-hysteria-proxy` | `hysteria-dsh-plugin` | [luminsw/hysteria-dsh-plugin](https://github.com/luminsw/hysteria-dsh-plugin) | hysteria 代理与 auth-proxy 的启停/诊断 |
 | `dsh-openvino` | `openvino-dsh-plugin` | [luminsw/openvino-dsh-plugin](https://github.com/luminsw/openvino-dsh-plugin) | OpenVINO 状态、模型扫描、基准与转换 |
 | `dsh-dev-workbench` | `dsh-dev-workbench` | [luminsw/dsh-dev-workbench](https://github.com/luminsw/dsh-dev-workbench) | 多语种开发工作台：构建、真机安装、日志 |
-| `icon-standard` | `@local/icon-standard` | [luminsw/qihuang-icon-standard](https://github.com/luminsw/qihuang-icon-standard) | 三端图标标准：skill + blueprint/render/audit |
+| `icon-standard` | `@luminsw/icon-standard` | [luminsw/qihuang-icon-standard](https://github.com/luminsw/qihuang-icon-standard) | 三端图标标准：skill + blueprint/render/audit |
 
 ## 安装（新机器 / 一键部署）
 
