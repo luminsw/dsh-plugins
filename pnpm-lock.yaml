@@ -10,22 +10,22 @@ importers:
     dependencies:
       '@luminsw/icon-standard':
         specifier: github:luminsw/qihuang-icon-standard
-        version: git+https://git@github.com:luminsw/qihuang-icon-standard.git#c157d870a272089bd008f6cac0bd7a58508dbd00
+        version: git+https://git@github.com:luminsw/qihuang-icon-standard.git#39b2c987a629e9d7f58731a24b3dc2c1b2428dde
       baihua-dsh-plugin:
         specifier: github:luminsw/baihua-dsh-plugin
-        version: https://codeload.github.com/luminsw/baihua-dsh-plugin/tar.gz/159fbdf09ed916de383d72afe75ea2933a2a2044(@deepseek-ai/cordis@4.1.0)(@deepseek-ai/dsh-agent@0.2.0-rc.2(752537a37eeccb96013fd06d8da0e8f0))(@deepseek-ai/dsh-llm@0.2.0-rc.2(@deepseek-ai/cordis@4.1.0))(@deepseek-ai/dsh-session@0.2.0-rc.2(@deepseek-ai/cordis@4.1.0)(@deepseek-ai/dsh-scope@0.2.0-rc.2(@deepseek-ai/cordis@4.1.0)(@deepseek-ai/dsh-invariants@0.2.0-rc.2(@deepseek-ai/cordis@4.1.0))))(@deepseek-ai/dsh-tools@0.2.0-rc.2(2482e31aba7b8f6250719d40d81c57d4))
+        version: git+https://git@github.com:luminsw/baihua-dsh-plugin.git#159fbdf09ed916de383d72afe75ea2933a2a2044(@deepseek-ai/cordis@4.1.0)(@deepseek-ai/dsh-agent@0.2.0-rc.2(752537a37eeccb96013fd06d8da0e8f0))(@deepseek-ai/dsh-llm@0.2.0-rc.2(@deepseek-ai/cordis@4.1.0))(@deepseek-ai/dsh-session@0.2.0-rc.2(@deepseek-ai/cordis@4.1.0)(@deepseek-ai/dsh-scope@0.2.0-rc.2(@deepseek-ai/cordis@4.1.0)(@deepseek-ai/dsh-invariants@0.2.0-rc.2(@deepseek-ai/cordis@4.1.0))))(@deepseek-ai/dsh-tools@0.2.0-rc.2(2482e31aba7b8f6250719d40d81c57d4))
       baihua-local-ai-dsh-plugin:
         specifier: github:luminsw/baihua-local-ai-dsh-plugin
-        version: https://codeload.github.com/luminsw/baihua-local-ai-dsh-plugin/tar.gz/9b3a5a1a0b78fbd6aed8be699579cc4ac8c95edd(@deepseek-ai/cordis@4.1.0)(@deepseek-ai/dsh-llm@0.2.0-rc.2(@deepseek-ai/cordis@4.1.0))(@deepseek-ai/dsh-tools@0.2.0-rc.2(2482e31aba7b8f6250719d40d81c57d4))
+        version: git+https://git@github.com:luminsw/baihua-local-ai-dsh-plugin.git#9b3a5a1a0b78fbd6aed8be699579cc4ac8c95edd(@deepseek-ai/cordis@4.1.0)(@deepseek-ai/dsh-llm@0.2.0-rc.2(@deepseek-ai/cordis@4.1.0))(@deepseek-ai/dsh-tools@0.2.0-rc.2(2482e31aba7b8f6250719d40d81c57d4))
       dsh-dev-workbench:
         specifier: github:luminsw/dsh-dev-workbench
-        version: https://codeload.github.com/luminsw/dsh-dev-workbench/tar.gz/495fbe6035520250f7d100330249e4a50fb19c85(@deepseek-ai/cordis@4.1.0)(@deepseek-ai/dsh-tools@0.2.0-rc.2(2482e31aba7b8f6250719d40d81c57d4))
+        version: git+https://git@github.com:luminsw/dsh-dev-workbench.git#495fbe6035520250f7d100330249e4a50fb19c85(@deepseek-ai/cordis@4.1.0)(@deepseek-ai/dsh-tools@0.2.0-rc.2(2482e31aba7b8f6250719d40d81c57d4))
       hysteria-dsh-plugin:
         specifier: github:luminsw/hysteria-dsh-plugin
-        version: https://codeload.github.com/luminsw/hysteria-dsh-plugin/tar.gz/46cec292983f2f2c3359ac36861d80d50ed10992(@deepseek-ai/cordis@4.1.0)(@deepseek-ai/dsh-tools@0.2.0-rc.2(2482e31aba7b8f6250719d40d81c57d4))
+        version: git+https://git@github.com:luminsw/hysteria-dsh-plugin.git#46cec292983f2f2c3359ac36861d80d50ed10992(@deepseek-ai/cordis@4.1.0)(@deepseek-ai/dsh-tools@0.2.0-rc.2(2482e31aba7b8f6250719d40d81c57d4))
       openvino-dsh-plugin:
         specifier: github:luminsw/openvino-dsh-plugin
-        version: https://codeload.github.com/luminsw/openvino-dsh-plugin/tar.gz/4d0d050f51f037ee244efcf80632fc914aa7f034(@deepseek-ai/cordis@4.1.0)(@deepseek-ai/dsh-tools@0.2.0-rc.2(2482e31aba7b8f6250719d40d81c57d4))
+        version: https://codeload.github.com/luminsw/openvino-dsh-plugin/tar.gz/18a5f2deb079fbb1cb5de548bb83cbddc2b79bfc(@deepseek-ai/cordis@4.1.0)(@deepseek-ai/dsh-tools@0.2.0-rc.2(2482e31aba7b8f6250719d40d81c57d4))
 
 packages:
 
@@ -182,15 +182,15 @@ packages:
   '@deepseek-ai/schemastery@3.19.0':
     resolution: {integrity: sha512-bDXoYQa7ghAhmdYD5VPlzKxEzJV/aKkz5l4V5h1u06z8GAPN1ROewSjvR9WiXhpa52E9fng8lpH5QdCRIQgnyQ==}
 
-  '@luminsw/icon-standard@git+https://git@github.com:luminsw/qihuang-icon-standard.git#c157d870a272089bd008f6cac0bd7a58508dbd00':
-    resolution: {commit: c157d870a272089bd008f6cac0bd7a58508dbd00, repo: git@github.com:luminsw/qihuang-icon-standard.git, type: git}
+  '@luminsw/icon-standard@git+https://git@github.com:luminsw/qihuang-icon-standard.git#39b2c987a629e9d7f58731a24b3dc2c1b2428dde':
+    resolution: {commit: 39b2c987a629e9d7f58731a24b3dc2c1b2428dde, repo: git@github.com:luminsw/qihuang-icon-standard.git, type: git}
     version: 1.0.0
 
   '@standard-schema/spec@1.1.0':
     resolution: {integrity: sha512-l2aFy5jALhniG5HgqrD6jXLi/rUWrKvqN/qJx6yoJsgKhblVd+iqqU4RCXavm/jPityDo5TCvKMnpjKnOriy0w==}
 
-  baihua-dsh-plugin@https://codeload.github.com/luminsw/baihua-dsh-plugin/tar.gz/159fbdf09ed916de383d72afe75ea2933a2a2044:
-    resolution: {tarball: https://codeload.github.com/luminsw/baihua-dsh-plugin/tar.gz/159fbdf09ed916de383d72afe75ea2933a2a2044}
+  baihua-dsh-plugin@git+https://git@github.com:luminsw/baihua-dsh-plugin.git#159fbdf09ed916de383d72afe75ea2933a2a2044:
+    resolution: {commit: 159fbdf09ed916de383d72afe75ea2933a2a2044, repo: git@github.com:luminsw/baihua-dsh-plugin.git, type: git}
     version: 0.1.0
     peerDependencies:
       '@deepseek-ai/cordis': ^4.0.1
@@ -199,31 +199,31 @@ packages:
       '@deepseek-ai/dsh-session': ^0.2.0-rc.2
       '@deepseek-ai/dsh-tools': ^0.2.0-rc.2
 
-  baihua-local-ai-dsh-plugin@https://codeload.github.com/luminsw/baihua-local-ai-dsh-plugin/tar.gz/9b3a5a1a0b78fbd6aed8be699579cc4ac8c95edd:
-    resolution: {tarball: https://codeload.github.com/luminsw/baihua-local-ai-dsh-plugin/tar.gz/9b3a5a1a0b78fbd6aed8be699579cc4ac8c95edd}
+  baihua-local-ai-dsh-plugin@git+https://git@github.com:luminsw/baihua-local-ai-dsh-plugin.git#9b3a5a1a0b78fbd6aed8be699579cc4ac8c95edd:
+    resolution: {commit: 9b3a5a1a0b78fbd6aed8be699579cc4ac8c95edd, repo: git@github.com:luminsw/baihua-local-ai-dsh-plugin.git, type: git}
     version: 0.1.0
     peerDependencies:
       '@deepseek-ai/cordis': ^4.0.1
       '@deepseek-ai/dsh-llm': ^0.2.0-rc.2
       '@deepseek-ai/dsh-tools': ^0.2.0-rc.2
 
-  dsh-dev-workbench@https://codeload.github.com/luminsw/dsh-dev-workbench/tar.gz/495fbe6035520250f7d100330249e4a50fb19c85:
-    resolution: {tarball: https://codeload.github.com/luminsw/dsh-dev-workbench/tar.gz/495fbe6035520250f7d100330249e4a50fb19c85}
+  dsh-dev-workbench@git+https://git@github.com:luminsw/dsh-dev-workbench.git#495fbe6035520250f7d100330249e4a50fb19c85:
+    resolution: {commit: 495fbe6035520250f7d100330249e4a50fb19c85, repo: git@github.com:luminsw/dsh-dev-workbench.git, type: git}
     version: 0.1.0
     peerDependencies:
       '@deepseek-ai/cordis': ^4.0.1
       '@deepseek-ai/dsh-tools': ^0.2.0-rc.2
 
-  hysteria-dsh-plugin@https://codeload.github.com/luminsw/hysteria-dsh-plugin/tar.gz/46cec292983f2f2c3359ac36861d80d50ed10992:
-    resolution: {tarball: https://codeload.github.com/luminsw/hysteria-dsh-plugin/tar.gz/46cec292983f2f2c3359ac36861d80d50ed10992}
+  hysteria-dsh-plugin@git+https://git@github.com:luminsw/hysteria-dsh-plugin.git#46cec292983f2f2c3359ac36861d80d50ed10992:
+    resolution: {commit: 46cec292983f2f2c3359ac36861d80d50ed10992, repo: git@github.com:luminsw/hysteria-dsh-plugin.git, type: git}
     version: 0.1.0
     peerDependencies:
       '@deepseek-ai/cordis': ^4.0.1
       '@deepseek-ai/dsh-tools': ^0.2.0-rc.2
 
-  openvino-dsh-plugin@https://codeload.github.com/luminsw/openvino-dsh-plugin/tar.gz/4d0d050f51f037ee244efcf80632fc914aa7f034:
-    resolution: {tarball: https://codeload.github.com/luminsw/openvino-dsh-plugin/tar.gz/4d0d050f51f037ee244efcf80632fc914aa7f034}
-    version: 0.1.0
+  openvino-dsh-plugin@https://codeload.github.com/luminsw/openvino-dsh-plugin/tar.gz/18a5f2deb079fbb1cb5de548bb83cbddc2b79bfc:
+    resolution: {tarball: https://codeload.github.com/luminsw/openvino-dsh-plugin/tar.gz/18a5f2deb079fbb1cb5de548bb83cbddc2b79bfc}
+    version: 0.2.0
     peerDependencies:
       '@deepseek-ai/cordis': ^4.0.1
       '@deepseek-ai/dsh-tools': ^0.2.0-rc.2
@@ -393,11 +393,11 @@ snapshots:
       '@deepseek-ai/cosmokit': 1.9.0
       '@standard-schema/spec': 1.1.0
 
-  '@luminsw/icon-standard@git+https://git@github.com:luminsw/qihuang-icon-standard.git#c157d870a272089bd008f6cac0bd7a58508dbd00': {}
+  '@luminsw/icon-standard@git+https://git@github.com:luminsw/qihuang-icon-standard.git#39b2c987a629e9d7f58731a24b3dc2c1b2428dde': {}
 
   '@standard-schema/spec@1.1.0': {}
 
-  baihua-dsh-plugin@https://codeload.github.com/luminsw/baihua-dsh-plugin/tar.gz/159fbdf09ed916de383d72afe75ea2933a2a2044(@deepseek-ai/cordis@4.1.0)(@deepseek-ai/dsh-agent@0.2.0-rc.2(752537a37eeccb96013fd06d8da0e8f0))(@deepseek-ai/dsh-llm@0.2.0-rc.2(@deepseek-ai/cordis@4.1.0))(@deepseek-ai/dsh-session@0.2.0-rc.2(@deepseek-ai/cordis@4.1.0)(@deepseek-ai/dsh-scope@0.2.0-rc.2(@deepseek-ai/cordis@4.1.0)(@deepseek-ai/dsh-invariants@0.2.0-rc.2(@deepseek-ai/cordis@4.1.0))))(@deepseek-ai/dsh-tools@0.2.0-rc.2(2482e31aba7b8f6250719d40d81c57d4)):
+  baihua-dsh-plugin@git+https://git@github.com:luminsw/baihua-dsh-plugin.git#159fbdf09ed916de383d72afe75ea2933a2a2044(@deepseek-ai/cordis@4.1.0)(@deepseek-ai/dsh-agent@0.2.0-rc.2(752537a37eeccb96013fd06d8da0e8f0))(@deepseek-ai/dsh-llm@0.2.0-rc.2(@deepseek-ai/cordis@4.1.0))(@deepseek-ai/dsh-session@0.2.0-rc.2(@deepseek-ai/cordis@4.1.0)(@deepseek-ai/dsh-scope@0.2.0-rc.2(@deepseek-ai/cordis@4.1.0)(@deepseek-ai/dsh-invariants@0.2.0-rc.2(@deepseek-ai/cordis@4.1.0))))(@deepseek-ai/dsh-tools@0.2.0-rc.2(2482e31aba7b8f6250719d40d81c57d4)):
     dependencies:
       '@deepseek-ai/cordis': 4.1.0
       '@deepseek-ai/dsh-agent': 0.2.0-rc.2(752537a37eeccb96013fd06d8da0e8f0)
@@ -410,25 +410,25 @@ snapshots:
       - bufferutil
       - utf-8-validate
 
-  baihua-local-ai-dsh-plugin@https://codeload.github.com/luminsw/baihua-local-ai-dsh-plugin/tar.gz/9b3a5a1a0b78fbd6aed8be699579cc4ac8c95edd(@deepseek-ai/cordis@4.1.0)(@deepseek-ai/dsh-llm@0.2.0-rc.2(@deepseek-ai/cordis@4.1.0))(@deepseek-ai/dsh-tools@0.2.0-rc.2(2482e31aba7b8f6250719d40d81c57d4)):
+  baihua-local-ai-dsh-plugin@git+https://git@github.com:luminsw/baihua-local-ai-dsh-plugin.git#9b3a5a1a0b78fbd6aed8be699579cc4ac8c95edd(@deepseek-ai/cordis@4.1.0)(@deepseek-ai/dsh-llm@0.2.0-rc.2(@deepseek-ai/cordis@4.1.0))(@deepseek-ai/dsh-tools@0.2.0-rc.2(2482e31aba7b8f6250719d40d81c57d4)):
     dependencies:
       '@deepseek-ai/cordis': 4.1.0
       '@deepseek-ai/dsh-llm': 0.2.0-rc.2(@deepseek-ai/cordis@4.1.0)
       '@deepseek-ai/dsh-tools': 0.2.0-rc.2(2482e31aba7b8f6250719d40d81c57d4)
 
-  dsh-dev-workbench@https://codeload.github.com/luminsw/dsh-dev-workbench/tar.gz/495fbe6035520250f7d100330249e4a50fb19c85(@deepseek-ai/cordis@4.1.0)(@deepseek-ai/dsh-tools@0.2.0-rc.2(2482e31aba7b8f6250719d40d81c57d4)):
+  dsh-dev-workbench@git+https://git@github.com:luminsw/dsh-dev-workbench.git#495fbe6035520250f7d100330249e4a50fb19c85(@deepseek-ai/cordis@4.1.0)(@deepseek-ai/dsh-tools@0.2.0-rc.2(2482e31aba7b8f6250719d40d81c57d4)):
     dependencies:
       '@deepseek-ai/cordis': 4.1.0
       '@deepseek-ai/dsh-tools': 0.2.0-rc.2(2482e31aba7b8f6250719d40d81c57d4)
       '@deepseek-ai/schemastery': 3.19.0
 
-  hysteria-dsh-plugin@https://codeload.github.com/luminsw/hysteria-dsh-plugin/tar.gz/46cec292983f2f2c3359ac36861d80d50ed10992(@deepseek-ai/cordis@4.1.0)(@deepseek-ai/dsh-tools@0.2.0-rc.2(2482e31aba7b8f6250719d40d81c57d4)):
+  hysteria-dsh-plugin@git+https://git@github.com:luminsw/hysteria-dsh-plugin.git#46cec292983f2f2c3359ac36861d80d50ed10992(@deepseek-ai/cordis@4.1.0)(@deepseek-ai/dsh-tools@0.2.0-rc.2(2482e31aba7b8f6250719d40d81c57d4)):
     dependencies:
       '@deepseek-ai/cordis': 4.1.0
       '@deepseek-ai/dsh-tools': 0.2.0-rc.2(2482e31aba7b8f6250719d40d81c57d4)
       '@deepseek-ai/schemastery': 3.19.0
 
-  openvino-dsh-plugin@https://codeload.github.com/luminsw/openvino-dsh-plugin/tar.gz/4d0d050f51f037ee244efcf80632fc914aa7f034(@deepseek-ai/cordis@4.1.0)(@deepseek-ai/dsh-tools@0.2.0-rc.2(2482e31aba7b8f6250719d40d81c57d4)):
+  openvino-dsh-plugin@https://codeload.github.com/luminsw/openvino-dsh-plugin/tar.gz/18a5f2deb079fbb1cb5de548bb83cbddc2b79bfc(@deepseek-ai/cordis@4.1.0)(@deepseek-ai/dsh-tools@0.2.0-rc.2(2482e31aba7b8f6250719d40d81c57d4)):
     dependencies:
       '@deepseek-ai/cordis': 4.1.0
       '@deepseek-ai/dsh-tools': 0.2.0-rc.2(2482e31aba7b8f6250719d40d81c57d4)
