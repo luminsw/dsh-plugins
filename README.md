@@ -1,6 +1,6 @@
 # 岐黄万里 · DSH 插件合集
 
-一个聚合 bundle，把六个插件装成一次。**插件代码不在这里**——本仓库只有一条 patch 和依赖声明，各插件仍在自己的仓库里独立开发、独立发版。
+一个聚合 bundle，把七个插件装成一次。**插件代码不在这里**——本仓库只有一条 patch 和依赖声明，各插件仍在自己的仓库里独立开发、独立发版。
 
 ## 包含什么
 
@@ -12,6 +12,7 @@
 | `dsh-openvino` | `openvino-dsh-plugin` | [luminsw/openvino-dsh-plugin](https://github.com/luminsw/openvino-dsh-plugin) | OpenVINO 状态、模型扫描、基准与转换 |
 | `dsh-dev-workbench` | `dsh-dev-workbench` | [luminsw/dsh-dev-workbench](https://github.com/luminsw/dsh-dev-workbench) | 多语种开发工作台：构建、真机安装、日志 |
 | `icon-standard` | `@luminsw/icon-standard` | [luminsw/qihuang-icon-standard](https://github.com/luminsw/qihuang-icon-standard) | 三端图标标准：skill + blueprint/render/audit |
+| `dsh-win-shell` | `win-shell-dsh-plugin` | [luminsw/win-shell-dsh-plugin](https://github.com/luminsw/win-shell-dsh-plugin) | Windows 命令执行防坑：先探路、编码安全、可提权（win_probe / win_run / win_elevate） |
 
 ## 安装（新机器 / 一键部署）
 

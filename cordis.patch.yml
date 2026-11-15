@@ -23,3 +23,5 @@
       name: dsh-dev-workbench
     - id: icon-standard
       name: '@luminsw/icon-standard'
+    - id: dsh-win-shell
+      name: win-shell-dsh-plugin
