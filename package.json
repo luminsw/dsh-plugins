@@ -1,0 +1,20 @@
+{
+  "name": "@luminsw/dsh-plugins",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "岐黄万里的 DSH 插件合集：一次装齐百花桥、本地 AI、hysteria 代理、OpenVINO、开发工作台与图标标准",
+  "dependencies": {
+    "baihua-dsh-plugin": "github:luminsw/baihua-dsh-plugin",
+    "baihua-local-ai-dsh-plugin": "github:luminsw/baihua-local-ai-dsh-plugin",
+    "hysteria-dsh-plugin": "github:luminsw/hysteria-dsh-plugin",
+    "openvino-dsh-plugin": "github:luminsw/openvino-dsh-plugin",
+    "dsh-dev-workbench": "github:luminsw/dsh-dev-workbench",
+    "@local/icon-standard": "github:luminsw/qihuang-icon-standard"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

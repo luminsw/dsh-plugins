@@ -1,0 +1,25 @@
+# 聚合 patch：把六个插件插进同一个 profile。
+#
+# 行 id 与各插件自己的 patch 保持一致（dsh-baihua-bridge / dsh-baihua-local-ai /
+# dsh-hysteria-proxy / dsh-openvino / dsh-dev-workbench / icon-standard），
+# 这样你在 profile 的 cordis.patch.yml 里按 id 覆盖 config 的写法继续有效：
+#   - id: dsh-baihua-bridge
+#     config:
+#       token: '<共享密钥>'
+#
+# ⚠️ 不要与单插件 bundle 同时安装：同一个 id 会被插入两次。
+# 换成聚合包时，先卸掉单个 bundle（plugin_manager set_bundle / remove_bundle）。
+
+- insert:
+    - id: dsh-baihua-bridge
+      name: baihua-dsh-plugin
+    - id: dsh-baihua-local-ai
+      name: baihua-local-ai-dsh-plugin
+    - id: dsh-hysteria-proxy
+      name: hysteria-dsh-plugin
+    - id: dsh-openvino
+      name: openvino-dsh-plugin
+    - id: dsh-dev-workbench
+      name: dsh-dev-workbench
+    - id: icon-standard
+      name: '@local/icon-standard'
